@@ -4,6 +4,8 @@
 
 For local speedscope instances: `npm install -g speedscope`
 
+`dotnet tool install -g dotnet-trace`
+
 To start collecting a trace, use:
 
 `dotnet trace collect --name $name --output $name.nettrace`
