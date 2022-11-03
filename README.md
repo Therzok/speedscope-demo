@@ -2,12 +2,16 @@
 
 [Speedscope docs](https://github.com/jlfwong/speedscope#navigation)
 
+For local speedscope instances: `npm install -g speedscope`
+
 To start collecting a trace, use:
 
 `dotnet trace collect --name $name --output $name.nettrace`
 
 If you want to collect information about the startup sequence of the process, use something like:
+
 `DOTNET_DefaultDiagnosticPortSuspend=1 ./bin/net7.0/alloc`
+
 `dotnet trace collect --name alloc --output alloc.nettrace --resume-runtime`
 
 Then convert it to speedscope format:
